@@ -1,0 +1,259 @@
+
+/* Main Registration Page */
+
+.register-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FBF7F4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Left Section */
+
+.register-left {
+    padding: 35px 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-logo {
+    color: #542D3A;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-logo span {
+    color: #B77B83;
+}
+
+/* Form Container */
+
+.register-form-container {
+    width: 100%;
+    max-width: 440px;
+    margin: 40px auto;
+}
+
+.register-subtitle {
+    color: #B77B83;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.register-form-container h1 {
+    color: #542D3A;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.register-description {
+    color: #81747A;
+    font-size: 14px;
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+/* Input Fields */
+
+.register-input-group {
+    margin-bottom: 18px;
+}
+
+.register-input-group label {
+    display: block;
+    color: #542D3A;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.register-input-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: 1px solid #E5D6D8;
+    border-radius: 9px;
+    background: #FFFFFF;
+    outline: none;
+    font-size: 14px;
+    color: #542D3A;
+    transition: 0.3s;
+}
+
+.register-input-group input:focus {
+    border-color: #B77B83;
+    box-shadow: 0 0 0 3px rgba(183, 123, 131, 0.12);
+}
+
+.register-input-group input::placeholder {
+    color: #B5A8AD;
+}
+
+/* Password */
+
+.register-password-wrapper {
+    position: relative;
+}
+
+.register-password-wrapper input {
+    padding-right: 65px;
+}
+
+.register-password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #A76575;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Terms */
+
+.register-terms {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #81747A;
+    font-size: 12px;
+    margin: 22px 0;
+}
+
+.register-terms input {
+    accent-color: #A76575;
+    cursor: pointer;
+}
+
+/* Submit Button */
+
+.register-submit {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #704653, #A76575);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(84, 45, 58, 0.2);
+}
+
+/* Login Link */
+
+.register-login-text {
+    text-align: center;
+    color: #81747A;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.register-login-text a {
+    color: #A76575;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.register-footer {
+    color: #A99BA0;
+    font-size: 11px;
+}
+
+/* Right Image Section */
+
+.register-right {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 65px;
+    box-sizing: border-box;
+}
+
+.register-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(47, 25, 34, 0.88),
+        rgba(47, 25, 34, 0.08)
+    );
+}
+
+.register-image-content {
+    position: relative;
+    color: #FFFFFF;
+    max-width: 480px;
+}
+
+.register-image-content h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.register-image-content p {
+    color: #F1E4E7;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.register-image-content span {
+    display: inline-block;
+    margin-top: 22px;
+    color: #E5B2BE;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+
+    .register-page {
+        grid-template-columns: 1fr;
+    }
+
+    .register-left {
+        min-height: 100vh;
+    }
+
+    .register-right {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .register-left {
+        padding: 25px 7%;
+    }
+
+    .register-form-container h1 {
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,420 @@
+
+.journey-page {
+    min-height: 100vh;
+    background: #FBF7F4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.journey-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(84, 45, 58, 0.08);
+}
+
+.journey-navbar h2 {
+    color: #542D3A;
+}
+
+.journey-navbar h2 span {
+    color: #B77B83;
+}
+
+.journey-navbar button {
+    padding: 11px 22px;
+    background: #542D3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.journey-navbar button:hover {
+    background: #A76575;
+}
+
+.journey-content {
+    padding: 50px 7%;
+}
+
+.journey-content h1 {
+    color: #542D3A;
+}
+
+.journey-content > p {
+    color: #81747A;
+}
+
+.journey-empty {
+    margin-top: 40px;
+    padding: 60px 25px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #E5D6D8;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(84, 45, 58, 0.06);
+}
+
+.journey-empty h2 {
+    color: #542D3A;
+}
+
+.journey-empty p {
+    color: #81747A;
+}
+
+.journey-empty button {
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #542D3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.journey-empty button:hover {
+    background: #A76575;
+}
+
+
+/* Add Journey Button */
+
+.add-journey-btn {
+    margin-top: 25px;
+    padding: 13px 25px;
+    background: #542D3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-journey-btn:hover {
+    background: #A76575;
+    transform: translateY(-2px);
+}
+
+/* Journey Form Card */
+
+.journey-form-card {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 35px;
+    background: #FFFFFF;
+    border: 1px solid #E5D6D8;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(84, 45, 58, 0.08);
+}
+
+.journey-form-card h2 {
+    color: #542D3A;
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+
+/* Form Groups */
+
+.journey-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    flex: 1;
+}
+
+.journey-form-group label {
+    color: #542D3A;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.journey-form-group input,
+.journey-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #E5D6D8;
+    border-radius: 8px;
+    background: #FBF7F4;
+    color: #542D3A;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+.journey-form-group input:focus,
+.journey-form-group select:focus {
+    border-color: #B77B83;
+    background: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(183, 123, 131, 0.12);
+}
+
+/* Date and Time Layout */
+
+.journey-form-row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Save Button */
+
+.save-journey-btn {
+    width: 100%;
+    padding: 14px;
+    background: #542D3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-journey-btn:hover {
+    background: #A76575;
+}
+
+/* Empty Journey Section */
+
+.journey-empty {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 55px 25px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #E5D6D8;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(84, 45, 58, 0.06);
+}
+
+.journey-empty h2 {
+    color: #542D3A;
+}
+
+.journey-empty p {
+    color: #81747A;
+}
+
+/* Saved Journey Card */
+
+.journey-card {
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    background: #FFFFFF;
+    border: 1px solid #E5D6D8;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(84, 45, 58, 0.06);
+}
+
+.journey-card h2 {
+    color: #542D3A;
+}
+
+.journey-card p {
+    color: #81747A;
+    line-height: 1.7;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .journey-content {
+        padding: 35px 5%;
+    }
+
+    .journey-form-card {
+        padding: 22px;
+    }
+
+    .journey-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
+
+
+
+/* Journey status */
+.journey-status {
+    margin-top: 15px;
+}
+
+.status-planned {
+    color: #b7791f;
+    font-weight: bold;
+}
+
+.status-in_progress {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.status-completed {
+    color: #15803d;
+    font-weight: bold;
+}
+
+/* Start Journey button */
+.start-journey-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+    margin: 12px 8px 12px 0;
+    cursor: pointer;
+}
+
+/* Safe Arrival button */
+.complete-journey-btn {
+    background-color: #15803d;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+    margin: 12px 8px 12px 0;
+    cursor: pointer;
+}
+
+/* Completed message */
+.safe-arrival-message {
+    color: #15803d;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.start-journey-btn:disabled,
+.complete-journey-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.journey-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.journey-card-actions button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.start-journey-btn {
+    background-color: #512d3b;
+    color: #ffffff;
+    border: 1px solid #512d3b;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.start-journey-btn:hover {
+    background-color: #3f2230;
+}
+
+.start-journey-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* Journey Card Header */
+.journey-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.journey-card-header h2 {
+    margin: 0;
+}
+
+/* Journey Status Badge */
+.journey-status-badge {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.journey-status-badge.planned {
+    background: #eeeeee;
+    color: #555555;
+}
+
+.journey-status-badge.in-progress {
+    background: #e3efff;
+    color: #2362b5;
+}
+
+.journey-status-badge.completed {
+    background: #e1f5e8;
+    color: #21834a;
+}
+
+/* Journey Timestamps */
+.journey-timestamp {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 14px;
+    padding: 12px;
+    background: #f4f6ff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.arrival-time {
+    background: #eaf7ee;
+}
+
+.safe-arrival-message {
+    color: #21834a;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Journey Actions */
+.journey-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.share-journey-btn {
+    background-color: #315f8c;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.share-journey-btn:hover {
+    background-color: #24496e;
+}

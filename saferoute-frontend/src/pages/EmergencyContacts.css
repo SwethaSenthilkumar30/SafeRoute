@@ -1,0 +1,615 @@
+.emergency-contacts-page {
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.contacts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contacts-header h1 {
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.contacts-header p {
+    color: #6b7280;
+}
+
+.add-contact-btn {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.add-contact-btn:hover {
+    background-color: #b91c1c;
+}
+
+.empty-contacts {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.empty-contacts h3 {
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.empty-contacts p {
+    color: #6b7280;
+}
+
+.contacts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.contact-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card h3 {
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #4b5563;
+    margin: 8px 0;
+}
+
+.primary-label {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 10px;
+    background-color: #dcfce7;
+    color: #166534;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+
+.contact-form {
+    max-width: 500px;
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 8px;
+    color: #374151;
+    font-weight: 600;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.save-contact-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.save-contact-btn:hover {
+    background: #b91c1c;
+}
+
+.contact-message {
+    color: #dc2626;
+    margin-bottom: 15px;
+}
+
+
+
+/* SafeRoute Theme */
+
+.emergency-contacts-page {
+    background: #FBF7F4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacts-header h1 {
+    color: #542D3A;
+}
+
+.contacts-header p {
+    color: #81747A;
+}
+
+/* Add Contact Button */
+.add-contact-btn {
+    background: #542D3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+}
+
+.add-contact-btn:hover {
+    background: #A76575;
+}
+
+/* Modal Background */
+.contact-modal-backdrop {
+    background: rgba(84, 45, 58, 0.45);
+}
+
+/* Contact Form */
+.contact-form {
+    background: #FFFFFF;
+    border: 1px solid #E5D6D8;
+    box-shadow: 0 12px 35px rgba(84, 45, 58, 0.15);
+}
+
+.contact-form h2 {
+    color: #542D3A;
+}
+
+.form-subtitle {
+    color: #81747A;
+}
+
+.contact-form label {
+    color: #704653;
+}
+
+.contact-form input {
+    border: 1px solid #E5D6D8;
+    color: #542D3A;
+}
+
+.contact-form input:focus {
+    border-color: #B77B83;
+    box-shadow: 0 0 0 3px rgba(183, 123, 131, 0.15);
+}
+
+/* Form Buttons */
+.cancel-form-btn {
+    background: #FBF7F4;
+    color: #542D3A;
+    border: 1px solid #E5D6D8;
+}
+
+.save-contact-btn {
+    background: #542D3A;
+    color: #FFFFFF;
+}
+
+.save-contact-btn:hover {
+    background: #A76575;
+}
+
+/* Empty State */
+.empty-contacts {
+    background: #FFFFFF;
+    border: 1px solid #E5D6D8;
+    box-shadow: 0 5px 18px rgba(84, 45, 58, 0.06);
+}
+
+.empty-contacts h3 {
+    color: #542D3A;
+}
+
+.empty-contacts p {
+    color: #81747A;
+}
+
+/* Contact Cards */
+.contact-card {
+    background: #FFFFFF;
+    border: 1px solid #E5D6D8;
+    box-shadow: 0 5px 18px rgba(84, 45, 58, 0.06);
+}
+
+.contact-card:hover {
+    box-shadow: 0 10px 25px rgba(84, 45, 58, 0.12);
+}
+
+.contact-card h3 {
+    color: #542D3A;
+}
+
+.contact-card p {
+    color: #81747A;
+}
+
+.primary-label {
+    background: #F3E6E7;
+    color: #704653;
+}
+
+
+
+/* Fix popup overlay */
+.contact-modal-backdrop {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: rgba(84, 45, 58, 0.45) !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+    z-index: 9999 !important;
+}
+
+/* Center the form */
+.contact-modal-backdrop .contact-form {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 !important;
+    position: relative;
+}
+
+/* Align form buttons */
+.form-buttons {
+    display: flex !important;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-buttons .cancel-form-btn {
+    background: #FBF7F4;
+    color: #542D3A;
+    border: 1px solid #E5D6D8;
+}
+
+.form-buttons .save-contact-btn {
+    background: #542D3A;
+    color: white;
+    border: none;
+}
+
+
+.edit-contact-btn {
+    margin-top: 15px;
+    padding: 9px 18px;
+    background: #F3E6E7;
+    color: #542D3A;
+    border: 1px solid #E5D6D8;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.edit-contact-btn:hover {
+    background: #E5D6D8;
+}
+
+
+
+/* Beautiful Emergency Contact Cards */
+
+.contact-card {
+    position: relative;
+    background: linear-gradient(145deg, #FFFFFF, #FBF5F5);
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #E8D5D9;
+    border-left: 5px solid #542D3A;
+    box-shadow: 0 5px 18px rgba(84, 45, 58, 0.07);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.contact-card::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(183, 123, 131, 0.08);
+    top: -35px;
+    right: -30px;
+    pointer-events: none;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(84, 45, 58, 0.13);
+    border-color: #B77B83;
+}
+
+/* Contact Name */
+.contact-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #542D3A;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.contact-card h3::before {
+    content: "♡";
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3E6E7;
+    color: #542D3A;
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+/* Contact Details */
+.contact-card p {
+    color: #81747A;
+    font-size: 15px;
+    margin: 13px 0;
+    line-height: 1.5;
+}
+
+/* Primary Contact Badge */
+.primary-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 13px;
+    margin-top: 12px;
+    margin-right: 12px;
+    background: #F3E6E7;
+    color: #704653;
+    border: 1px solid #E5D6D8;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Edit Button */
+.edit-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-left: 5px;
+    padding: 9px 20px;
+    background: #542D3A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-contact-btn:hover {
+    background: #A76575;
+    transform: translateY(-2px);
+}
+
+/* Card Grid */
+.contacts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+    gap: 25px;
+    justify-content: start;
+}
+
+
+/* Contact action buttons */
+.contact-actions {
+    display: flex !important;
+    align-items: center;
+    gap: 14px !important;
+    margin-top: 20px;
+}
+
+.contact-actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 85px;
+    padding: 10px 18px !important;
+    border-radius: 8px !important;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Edit */
+.contact-actions .edit-contact-btn {
+    background: #542D3A !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+.contact-actions .edit-contact-btn:hover {
+    background: #A76575 !important;
+}
+
+/* Delete */
+.contact-actions .delete-contact-btn {
+    background: #F3E6E7 !important;
+    color: #8B3548 !important;
+    border: 1px solid #E5D6D8 !important;
+}
+
+.contact-actions .delete-contact-btn:hover {
+    background: #E5D6D8 !important;
+}
+
+
+
+/* Fix contact action button spacing and styling */
+.emergency-contacts-page .contact-card .contact-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin-top: 22px !important;
+    width: 100%;
+}
+
+.emergency-contacts-page .contact-card .contact-actions button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 90px !important;
+    min-width: 90px !important;
+    height: 40px !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    border-radius: 9px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+/* Edit button */
+.emergency-contacts-page .contact-card .contact-actions .edit-contact-btn {
+    background-color: #542D3A !important;
+    color: #FFFFFF !important;
+    border: 1px solid #542D3A !important;
+}
+
+.emergency-contacts-page .contact-card .contact-actions .edit-contact-btn:hover {
+    background-color: #A76575 !important;
+    border-color: #A76575 !important;
+}
+
+/* Delete button */
+.emergency-contacts-page .contact-card .contact-actions .delete-contact-btn {
+    background-color: #F3E6E7 !important;
+    color: #8B3548 !important;
+    border: 1px solid #E5D6D8 !important;
+}
+
+.emergency-contacts-page .contact-card .contact-actions .delete-contact-btn:hover {
+    background-color: #E5D6D8 !important;
+    border-color: #D8BFC4 !important;
+}
+
+
+
+
+.contact-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.set-primary-btn,
+.call-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f3e5e7;
+    color: #542d3b;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.set-primary-btn:hover,
+.call-contact-btn:hover {
+    background-color: #e8d2d7;
+}
+
+.edit-contact-btn {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #542d3b;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.edit-contact-btn:hover {
+    background-color: #3f202c;
+}
+
+.delete-contact-btn {
+    padding: 9px 18px;
+    border: 1px solid #542d3b;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #542d3b;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delete-contact-btn:hover {
+    background-color: #f3e5e7;
+}
+
+
+.contacts-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.back-dashboard-btn {
+    background-color: white;
+    color: #512b3a;
+    border: 1px solid #512b3a;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-dashboard-btn:hover {
+    background-color: #f5e8eb;
+}
